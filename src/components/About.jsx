@@ -33,7 +33,7 @@ const About = () => {
             </p>
             <p>
             At Berkeley, I've honed my skills across software development, data analysis, and machine learning, and I'm excited to apply them in collaborative, mission-driven environments. 
-            Outside of the terminal, you’ll probably find me exploring new eats, enjoying a pour-over coffee, or singing along to Canto-pop and K-pop playlists.
+            Outside of the terminal, you’ll probably find me exploring restaurants, enjoying a pour-over coffee, making matcha, or singing along to Canto-pop and K-pop playlists.
             </p>
           </motion.div>
           <motion.div
