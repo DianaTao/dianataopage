@@ -1,9 +1,17 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Projects.css';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const navigate = useNavigate();
+
+  const handleProjectClick = (project) => {
+    if (project.id === 5) { // MindBridge project
+      navigate('/projects/mindbridge');
+    }
+  };
 
   // Technology color mapping
   const techColors = {
@@ -26,7 +34,26 @@ const Projects = () => {
     'Machine Learning': '#E65100',
     'Transformers': '#F57F17',
     'Computer Vision': '#1565C0',
-    'Image Processing': '#00695C'
+    'Image Processing': '#00695C',
+    'AWS Lambda': '#FF9900',
+    'Serverless': '#FD7E14',
+    'AWS': '#FF9900',
+    'DynamoDB': '#1976D2',
+    'API Gateway': '#00ACC1',
+    'Amazon Rekognition': '#E91E63',
+    'Amazon Comprehend': '#9C27B0',
+    'Amazon Bedrock': '#FF5722',
+    'Real-time Processing': '#4CAF50',
+    'Event-driven': '#795548',
+    'Next.js': '#000000',
+    'React Native': '#61DAFB',
+    'FastAPI': '#009688',
+    'Supabase': '#3ECF8E',
+    'PostgreSQL': '#336791',
+    'Claude AI': '#7B1FA2',
+    'Tailwind CSS': '#06B6D4',
+    'Expo': '#000020',
+    'JWT Auth': '#00BCD4'
   };
 
   const projects = [
@@ -77,6 +104,33 @@ const Projects = () => {
       links: {
         github: 'https://github.com/DianaTao/art-advisor-ai'
       }
+    },
+    {
+      id: 5,
+      title: 'MindBridge: Multi-Modal Emotion Intelligence Platform',
+      description: 'A comprehensive emotion intelligence platform that leverages AWS serverless architecture to provide real-time emotion analysis across multiple modalities. The platform serves three key areas: Corporate Wellness Monitoring, Call Center Agent Support, and Digital Mental Health Coaching. Features include real-time video emotion detection using Amazon Rekognition, text sentiment analysis with Amazon Comprehend, live call analysis with Amazon Transcribe, and mental health check-ins powered by Amazon Bedrock. The system uses a sophisticated serverless architecture with Lambda functions for scalable, event-driven processing of emotional data.',
+      image: '/img/mindbridge.svg',
+      category: 'personal',
+      technologies: ['Python', 'AWS Lambda', 'Serverless', 'AWS', 'DynamoDB', 'API Gateway', 'Amazon Rekognition', 'Amazon Comprehend', 'Amazon Bedrock', 'Real-time Processing', 'Event-driven'],
+      links: {
+        github: 'https://github.com/DianaTao/MindBridge',
+        devpost: 'https://devpost.com/software/mindbridge-sow81y',
+        demo: 'https://youtu.be/92xVVM9TcDk',
+        link: 'https://d8zwp3hg28702.cloudfront.net/'
+      }
+    },
+    {
+      id: 6,
+      title: 'SOLACE: Social Work Operations Assistant',
+      description: 'An innovative AI-powered platform designed to empower social workers in the San Francisco Bay Area with advanced tools for case management, documentation, and collaboration. SOLACE features a cross-platform solution with web and mobile apps, offering voice-to-text case notes, AI-powered task generation, intelligent report analysis, and real-time data synchronization. Built with a modern tech stack including Next.js, React Native, Python FastAPI, and Supabase, the platform prioritizes security and HIPAA compliance while streamlining social work operations.',
+      image: '/img/solace.svg',
+      category: 'personal',
+      technologies: ['Next.js', 'React Native', 'Python', 'FastAPI', 'Supabase', 'PostgreSQL', 'Claude sonnet AI', 'Tailwind CSS', 'Expo', 'Vapi'],
+      links: {
+        github: 'https://github.com/DianaTao/solace',
+        devpost: 'https://devpost.com/software/solace-yqirtb',
+        link: 'https://solace-nu.vercel.app'
+      }
     }
   ];
 
@@ -120,11 +174,12 @@ const Projects = () => {
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
-              className="project-item"
+              className={`project-item ${project.id === 5 ? 'clickable' : ''}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
+              onClick={() => handleProjectClick(project)}
             >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
@@ -155,6 +210,21 @@ const Projects = () => {
                   {project.links.github && (
                     <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="btn">
                       GitHub
+                    </a>
+                  )}
+                  {project.links.devpost && (
+                    <a href={project.links.devpost} target="_blank" rel="noopener noreferrer" className="btn">
+                      Devpost
+                    </a>
+                  )}
+                  {project.links.demo && (
+                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="btn">
+                      Demo
+                    </a>
+                  )}
+                  {project.links.link && (
+                    <a href={project.links.link} target="_blank" rel="noopener noreferrer" className="btn">
+                      Link
                     </a>
                   )}
                   {project.links.slides && (

@@ -1,0 +1,28 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- Background Pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2d2d2d" stroke-width="1"/>
+  </pattern>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  
+  <!-- Main Icon -->
+  <circle cx="200" cy="120" r="50" fill="#3ECF8E" opacity="0.8"/>
+  <circle cx="200" cy="120" r="40" fill="#1a1a1a"/>
+  <path d="M 180 120 Q 200 90 220 120 T 240 150 T 200 180 T 160 150 T 180 120" 
+        fill="none" stroke="#3ECF8E" stroke-width="4"/>
+  
+  <!-- Connecting Lines -->
+  <line x1="160" y1="150" x2="140" y2="170" stroke="#06B6D4" stroke-width="2"/>
+  <line x1="240" y1="150" x2="260" y2="170" stroke="#06B6D4" stroke-width="2"/>
+  
+  <!-- Side Elements -->
+  <circle cx="120" cy="180" r="15" fill="#7B1FA2" opacity="0.6"/>
+  <circle cx="280" cy="180" r="15" fill="#336791" opacity="0.6"/>
+  
+  <!-- Text -->
+  <text x="200" y="230" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">SOLACE</text>
+  <text x="200" y="250" text-anchor="middle" fill="#3ECF8E" font-family="Arial, sans-serif" font-size="12">Social Work Operations Assistant</text>
+  <text x="200" y="270" text-anchor="middle" fill="#06B6D4" font-family="Arial, sans-serif" font-size="10">AI-Powered Case Management</text>
+</svg> 
