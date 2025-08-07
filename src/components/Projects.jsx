@@ -53,7 +53,12 @@ const Projects = () => {
     'Claude AI': '#7B1FA2',
     'Tailwind CSS': '#06B6D4',
     'Expo': '#000020',
-    'JWT Auth': '#00BCD4'
+    'JWT Auth': '#00BCD4',
+    'Vite': '#646CFF',
+    'Netlify': '#00C7B7',
+    'Real-time': '#4CAF50',
+    'Authentication': '#FF5722',
+    'Row Level Security': '#795548'
   };
 
   const projects = [
@@ -130,6 +135,18 @@ const Projects = () => {
         github: 'https://github.com/DianaTao/solace',
         devpost: 'https://devpost.com/software/solace-yqirtb',
         link: 'https://solace-nu.vercel.app'
+      }
+    },
+    {
+      id: 7,
+      title: 'StudyBuddy Hub',
+      description: 'A React-based web application that allows students to create, share, and interact with course-related posts. The platform provides a comprehensive solution for students to share study tips, course reviews, and academic experiences. Built with React 18, Vite, Tailwind CSS, and Supabase, featuring real-time updates, authentication, and a modern UI with external Reddit API integration for additional study content.',
+      image: '/img/Kapture 2025-08-05 at 18.20.56.gif',
+      category: 'personal',
+      technologies: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Authentication', 'Real-time', 'Row Level Security', 'Netlify'],
+      links: {
+        github: 'https://github.com/DianaTao/StudyBuddy-hub',
+        link: 'https://singular-duckanoo-974e8f.netlify.app/'
       }
     }
   ];
