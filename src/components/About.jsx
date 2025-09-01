@@ -34,7 +34,7 @@ const About = () => {
             <p>
             At Berkeley, I've honed my skills across software development, data analysis, and machine learning, 
             and I'm excited to apply them in collaborative, mission-driven environments. 
-            Outside of the terminal, you’ll probably find me exploring restaurants, making matcha, or enjoying K-pop playlists.
+            Outside of the terminal, you’ll probably find me exploring restaurants, making matcha, or enjoying Canto-pop and K-pop playlists.
             </p>
           </motion.div>
           <motion.div
@@ -55,6 +55,10 @@ const About = () => {
             <Link to="/blog" className="about-btn">
               <i className="fa fa-rss"></i>
               <span>Read Blog</span>
+            </Link>
+            <Link to="/cs180-projects" className="about-btn">
+              <i className="fa fa-eye"></i>
+              <span>CS180</span>
             </Link>
           </motion.div>
         </div>

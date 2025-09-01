@@ -38,10 +38,11 @@
 .about-buttons {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
   margin-top: 40px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .about-btn {

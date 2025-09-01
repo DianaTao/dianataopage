@@ -1,0 +1,267 @@
+.cs180-projects {
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+
+.cs180-projects .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.cs180-projects .section-title span {
+  color: var(--primary-color);
+}
+
+.cs180-projects .section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+
+.cs180-projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.cs180-projects .project-item {
+  background: var(--card-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  backdrop-filter: blur(10px);
+}
+
+.cs180-projects .project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.cs180-projects .project-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.cs180-projects .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cs180-projects .project-item:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.cs180-projects .project-content {
+  padding: 25px;
+}
+
+.cs180-projects .project-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.cs180-projects .project-content p {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.cs180-projects .project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cs180-projects .tech-tag {
+  background: #007bff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.cs180-projects .project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.cs180-projects .btn {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+}
+
+.cs180-projects .btn:hover {
+  background: var(--text-color);
+  transform: translateY(-2px);
+}
+
+/* Individual project page styles */
+.cs180-project-page {
+  padding: 120px 0 80px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.cs180-project-page .project-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.cs180-project-page .project-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Project sections styling */
+.cs180-project-page .project-sections {
+  margin-top: 60px;
+}
+
+.cs180-project-page .section-item {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.cs180-project-page .section-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 15px rgba(251, 69, 112, 0.2);
+}
+
+.cs180-project-page .section-item .section-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+.cs180-project-page .section-item .section-content {
+  color: var(--text-color);
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
+}
+
+.cs180-project-page .section-item .section-content p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.cs180-project-page .section-video {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.cs180-project-page .section-video video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.cs180-project-page .video-caption {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.cs180-project-page .section-image {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.cs180-project-page .section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.cs180-project-page .image-comparison {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.cs180-project-page .image-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.cs180-project-page .image-item img {
+  width: 100%;
+  height: 600px; /* Increased height for longer frames */
+  object-fit: cover; /* Maintains aspect ratio, crops if needed */
+  object-position: center; /* Centers the image content */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.cs180-project-page .image-caption {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cs180-projects .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cs180-projects .section-title {
+    font-size: 2rem;
+  }
+  
+  .cs180-project-page .project-title {
+    font-size: 2.5rem;
+  }
+  
+  .cs180-project-page .project-subtitle {
+    font-size: 1.5rem;
+  }
+}

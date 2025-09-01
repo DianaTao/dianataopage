@@ -12,6 +12,7 @@ const Navbar = () => {
     { id: 'home', label: 'Home', icon: 'fas fa-home', type: 'section' },
     { id: 'about', label: 'About', icon: 'fas fa-user', type: 'section' },
     { id: 'projects', label: 'Projects', icon: 'fas fa-code', type: 'page' },
+    { id: 'cs180-projects', label: 'CS180', icon: 'fas fa-eye', type: 'page' },
     { id: 'gallery', label: 'Gallery', icon: 'fas fa-images', type: 'page' },
     { id: 'blog', label: 'Blog', icon: 'fas fa-blog', type: 'page' },
     { id: 'contact', label: 'Contact', icon: 'fas fa-envelope', type: 'section' }
@@ -21,8 +22,12 @@ const Navbar = () => {
     setIsOpen(false);
     
     if (item.type === 'page') {
-      // For pages (Projects, Gallery, Blog), navigate directly
-      navigate(`/${item.id}`);
+      // For pages (Projects, Gallery, Blog, CS180), navigate directly
+      if (item.id === 'cs180-projects') {
+        navigate('/cs180-projects');
+      } else {
+        navigate(`/${item.id}`);
+      }
     } else {
       // For sections (Home, About, Contact), handle scrolling
       if (location.pathname !== '/') {

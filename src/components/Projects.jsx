@@ -141,7 +141,7 @@ const Projects = () => {
       id: 7,
       title: 'StudyBuddy Hub',
       description: 'A React-based web application that allows students to create, share, and interact with course-related posts. The platform provides a comprehensive solution for students to share study tips, course reviews, and academic experiences. Built with React 18, Vite, Tailwind CSS, and Supabase, featuring real-time updates, authentication, and a modern UI with external Reddit API integration for additional study content.',
-      image: '/img/Kapture 2025-08-05 at 18.20.56.gif',
+      image: '/img/StudyBuddy_Hub_demo.mp4',
       category: 'personal',
       technologies: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Authentication', 'Real-time', 'Row Level Security', 'Netlify'],
       links: {
@@ -199,7 +199,20 @@ const Projects = () => {
               onClick={() => handleProjectClick(project)}
             >
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                {project.image.endsWith('.mp4') ? (
+                  <video 
+                    src={project.image} 
+                    alt={project.title} 
+                    loading="lazy"
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    style={{ width: '100%', height: 'auto' }}
+                  />
+                ) : (
+                  <img src={project.image} alt={project.title} loading="lazy" />
+                )}
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
