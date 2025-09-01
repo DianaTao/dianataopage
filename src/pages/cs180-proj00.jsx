@@ -42,20 +42,20 @@ const CS180Proj00 = () => {
           </div>
           
           <div className="section-item">
-            <h3 className="section-title">Part 2: Architectural Perspective Compression</h3>
+            <h3 className="section-title">Part 2: Berkeley Campanile - Perspective Compression in Architecture</h3>
             <div className="section-content">
               <p>
-                Architectural photography demonstrates how perspective compression affects the visual relationship between buildings and their surroundings. When shooting architecture without zoom, the wide angle creates a sense of depth and space, making buildings appear further apart and emphasizing the environment around them. However, when zooming in from a distance, the perspective compression brings elements closer together, creating a more intimate, layered composition where buildings seem to stack against each other, reducing the perceived depth of the scene.
+                The iconic Berkeley Campanile demonstrates perspective compression beautifully—when shot without zoom from a closer distance, the wide-angle perspective creates dramatic depth and scale, making the tower soar into the sky while capturing the full campus context. However, when photographed from a greater distance with telephoto zoom, perspective compression brings the Campanile and nearby structures closer together, creating an intimate layered composition where the tower appears to stand shoulder-to-shoulder with adjacent buildings rather than towering above them. This compression effect reduces perceived depth, making architectural elements appear on a flatter plane—perfectly illustrating how focal length fundamentally changes our perception of spatial relationships in computer vision.
               </p>
               <div className="section-image">
                 <div className="image-comparison">
                   <div className="image-item">
-                    <img src="/img/cs180/proj00/part2_without_zoom.png" alt="Architectural shot without zoom showing wide perspective" />
-                    <p className="image-caption">Without zoom - wide perspective, more depth</p>
+                    <img src="/img/cs180/proj00/part2_without_zoom.png" alt="Berkeley Campanile without zoom showing wide perspective" />
+                    <p className="image-caption">Without zoom - wide perspective captures full campus context</p>
                   </div>
                   <div className="image-item">
-                    <img src="/img/cs180/proj00/part2_zoom_in.png" alt="Architectural shot with zoom showing perspective compression" />
-                    <p className="image-caption">With zoom - perspective compression, less depth</p>
+                    <img src="/img/cs180/proj00/part2_zoom_in.png" alt="Berkeley Campanile with zoom showing perspective compression" />
+                    <p className="image-caption">With zoom - perspective compression creates intimate layering</p>
                   </div>
                 </div>
               </div>
@@ -63,10 +63,10 @@ const CS180Proj00 = () => {
           </div>
           
           <div className="section-item">
-            <h3 className="section-title">Part 3: The Dolly Zoom</h3>
+            <h3 className="section-title">Part 3: Flower Dolly Zoom - The Vertigo Effect in Nature</h3>
             <div className="section-content">
               <p>
-                The dolly zoom, also known as the "vertigo effect," is a cinematic technique that creates a disorienting visual effect by simultaneously moving the camera forward or backward while zooming in the opposite direction. This creates a unique perspective shift where the subject appears to stay the same size while the background dramatically changes its apparent distance and scale, producing a surreal, dreamlike quality that filmmakers use to convey psychological states, disorientation, or dramatic tension.
+                The dolly zoom creates a paradoxical visual phenomenon where the camera simultaneously moves forward while zooming out, maintaining the flower's apparent size while dramatically shifting the background's scale and perspective. This technique reveals how our visual system processes conflicting depth cues—as the camera approaches the flower, the background appears to rush toward the viewer while maintaining spatial relationships, creating a surreal effect that challenges our brain's depth perception algorithms.
               </p>
               <div className="section-video">
                 <video 
@@ -78,7 +78,7 @@ const CS180Proj00 = () => {
                 >
                   Your browser does not support the video tag.
                 </video>
-                <p className="video-caption">Dolly zoom demonstration of flowers showing the vertigo effect</p>
+                <p className="video-caption">Flower dolly zoom demonstrating the vertigo effect and depth perception challenges</p>
               </div>
             </div>
           </div>
