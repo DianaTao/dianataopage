@@ -50,11 +50,11 @@ const CS180Proj00 = () => {
               <div className="section-image">
                 <div className="image-comparison">
                   <div className="image-item">
-                    <img src="public/img/cs180/proj00/part2_without_zoom.png" alt="Architectural shot without zoom showing wide perspective" />
+                    <img src="/img/cs180/proj00/part2_without_zoom.png" alt="Architectural shot without zoom showing wide perspective" />
                     <p className="image-caption">Without zoom - wide perspective, more depth</p>
                   </div>
                   <div className="image-item">
-                    <img src="public/img/cs180/proj00/part2_zoom_in.png" alt="Architectural shot with zoom showing perspective compression" />
+                    <img src="/img/cs180/proj00/part2_zoom_in.png" alt="Architectural shot with zoom showing perspective compression" />
                     <p className="image-caption">With zoom - perspective compression, less depth</p>
                   </div>
                 </div>
