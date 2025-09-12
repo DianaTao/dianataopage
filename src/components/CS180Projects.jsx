@@ -14,6 +14,11 @@ const CS180Projects = () => {
       id: 0,
       title: 'Becoming Friends with Your Camera',
       description: 'Introduction to camera fundamentals and basic image processing concepts.'
+    },
+    {
+      id: 1,
+      title: 'Colorizing Prokudin-Gorskii Photographs',
+      description: 'Automatic channel alignment for historical glass plate images (.jpg and .tif).'
     }
     // More projects can be added here as they're completed
   ];
