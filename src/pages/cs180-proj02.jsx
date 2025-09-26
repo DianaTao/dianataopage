@@ -46,11 +46,11 @@ const CS180Proj02 = () => {
                 </div>
 
                 <p>
-                  Technical Implementation: The vectorized implementation uses NumPy's stride tricks to create overlapping windows efficiently. Zero-padding ensures consistent output dimensions, stride tricks avoid explicit loops over image regions, and einsum operations provide optimized matrix multiplication.
+                  The vectorized implementation uses NumPy's stride tricks to create overlapping windows efficiently. Zero-padding ensures consistent output dimensions, stride tricks avoid explicit loops over image regions, and einsum operations provide optimized matrix multiplication.
                 </p>
 
                 <p>
-                  Key Insights: The vectorized NumPy version is orders of magnitude faster than loops, 
+                  The vectorized NumPy version is orders of magnitude faster than loops, 
                   while SciPy provides similar performance with excellent accuracy. All methods use zero-padding at 
                   image boundaries, which softens edges near borders but ensures consistent output dimensions.
                 </p>
@@ -95,11 +95,11 @@ const CS180Proj02 = () => {
                 </div>
 
                 <p>
-                  Technical Implementation: The edge detection system uses a percentile-based thresholding approach. It computes gradient magnitude at each pixel, sorts gradient values to find percentile threshold, creates binary edge map using threshold, and allows easy adjustment of sensitivity vs. noise trade-off.
+                  The edge detection system uses a percentile-based thresholding approach. It computes gradient magnitude at each pixel, sorts gradient values to find percentile threshold, creates binary edge map using threshold, and allows easy adjustment of sensitivity vs. noise trade-off.
                 </p>
 
                 <p>
-                  <strong>Threshold Strategy:</strong> Using a percentile-based threshold ensures that approximately 
+                  Using a percentile-based threshold ensures that approximately 
                   10% of pixels are marked as edges, providing a good balance between noise suppression and 
                   capturing salient structures. Adjusting the percentile allows trading off recall vs. noise.
                 </p>
@@ -148,11 +148,11 @@ const CS180Proj02 = () => {
                 </div>
 
                 <p>
-                  Technical Implementation: The DoG filtering process involves creating Gaussian kernels using cv2.getGaussianKernel, building Gaussian kernel G(σ) with size covering ~±3σ, blurring the image by convolving with G, applying finite difference operators to the blurred image, creating DoG kernels by convolving G with D_x and D_y, and applying DoG kernels in a single step for efficiency.
+                  The DoG filtering process involves creating Gaussian kernels using cv2.getGaussianKernel, building Gaussian kernel G(σ) with size covering ~±3σ, blurring the image by convolving with G, applying finite difference operators to the blurred image, creating DoG kernels by convolving G with D_x and D_y, and applying DoG kernels in a single step for efficiency.
                 </p>
 
                 <p>
-                  <strong>Key Findings:</strong> DoG reduces noise compared to raw finite differences by smoothing first. 
+                  DoG reduces noise compared to raw finite differences by smoothing first. 
                   Single-step DoG and blur→derivative agree closely away from boundaries; residual differences 
                   concentrate at image edges due to padding choices.
                 </p>
@@ -213,14 +213,14 @@ const CS180Proj02 = () => {
                 </div>
 
                 <p>
-                  <strong>Implementation Notes:</strong> As the sharpening amount increases, edges become crisper but 
+                  As the sharpening amount increases, edges become crisper but 
                   halos/ringing can appear around strong contrasts. The single-kernel form is convenient and efficient 
                   for repeated application, matching the two-step pipeline closely with minor differences from 
                   boundaries and floating-point rounding.
                 </p>
 
                 <p>
-                  Technical Implementation: The sharpening process uses unsharp masking to boost high frequencies by subtracting Gaussian blur from the original image. The single-kernel form is convenient and efficient for repeated application, matching the two-step pipeline closely with minor differences from boundaries and floating-point rounding.
+                The sharpening process uses unsharp masking to boost high frequencies by subtracting Gaussian blur from the original image. The single-kernel form is convenient and efficient for repeated application, matching the two-step pipeline closely with minor differences from boundaries and floating-point rounding.
                 </p>
 
                 <p>
