@@ -19,6 +19,11 @@ const CS180Projects = () => {
       id: 1,
       title: 'Colorizing Prokudin-Gorskii Photographs',
       description: 'Automatic channel alignment for historical glass plate images (.jpg and .tif).'
+    },
+    {
+      id: 2,
+      title: 'Fun with Filters and Frequencies',
+      description: 'Convolution implementation, edge detection, image sharpening, hybrid images, and multiresolution blending.'
     }
     // More projects can be added here as they're completed
   ];
