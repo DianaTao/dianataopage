@@ -267,6 +267,24 @@
   margin-bottom: 15px;
 }
 
+/* Larger images for correspondence display */
+.cs180-project-page .image-gallery .image-item {
+  width: 45%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.cs180-project-page .image-gallery .image-item img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
 .cs180-project-page .image-caption {
   color: var(--text-color);
   font-size: 0.8rem;

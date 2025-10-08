@@ -24,6 +24,11 @@ const CS180Projects = () => {
       id: 2,
       title: 'Fun with Filters and Frequencies',
       description: 'Convolution implementation, edge detection, image sharpening, hybrid images, and multiresolution blending.'
+    },
+    {
+      id: 3,
+      title: '[Auto]Stitching Photo Mosaics',
+      description: 'Automatic panoramic image stitching using homography recovery, image warping, and multiresolution blending.'
     }
     // More projects can be added here as they're completed
   ];

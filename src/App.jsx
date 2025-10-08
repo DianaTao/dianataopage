@@ -8,6 +8,7 @@ import MindBridgeDetail from './pages/MindBridgeDetail';
 import CS180Proj00 from './pages/cs180-proj00';
 import CS180Proj01 from './pages/cs180-proj01';
 import CS180Proj02 from './pages/cs180-proj02';
+import CS180Proj03 from './pages/cs180-proj03';
 import CS180ProjectsPage from './pages/CS180Projects';
 import './App.css';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/cs180-proj00" element={<CS180Proj00 />} />
           <Route path="/cs180-proj01" element={<CS180Proj01 />} />
           <Route path="/cs180-proj02" element={<CS180Proj02 />} />
+          <Route path="/cs180-proj03" element={<CS180Proj03 />} />
         </Routes>
       </div>
     </Router>
