@@ -608,6 +608,10 @@ const CS180Proj03 = () => {
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img1_set3_locations.png" alt="Descriptor locations for Set 1 Image 1" />
                     <p className="image-caption">Descriptor Locations (Set 1, Image 1)</p>
                   </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img1_set3.png" alt="Top 5 descriptors for Set 1 Image 1" />
+                    <p className="image-caption">Top 5 Descriptors (Set 1, Image 1)</p>
+                  </div>
                 </div>
                 <div className="image-row">
                   <div className="image-item">
@@ -617,6 +621,10 @@ const CS180Proj03 = () => {
                   <div className="image-item">
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img2_set3_locations.png" alt="Descriptor locations for Set 1 Image 2" />
                     <p className="image-caption">Descriptor Locations (Set 1, Image 2)</p>
+                  </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img2_set3.png" alt="Top 5 descriptors for Set 1 Image 2" />
+                    <p className="image-caption">Top 5 Descriptors (Set 1, Image 2)</p>
                   </div>
                 </div>
                 <div className="image-row">
@@ -628,6 +636,10 @@ const CS180Proj03 = () => {
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img3_set3_locations.png" alt="Descriptor locations for Set 1 Image 3" />
                     <p className="image-caption">Descriptor Locations (Set 1, Image 3)</p>
                   </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img3_set3.png" alt="Top 5 descriptors for Set 1 Image 3" />
+                    <p className="image-caption">Top 5 Descriptors (Set 1, Image 3)</p>
+                  </div>
                 </div>
                 <div className="image-row">
                   <div className="image-item">
@@ -637,6 +649,10 @@ const CS180Proj03 = () => {
                   <div className="image-item">
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img1_set4_locations.png" alt="Descriptor locations for Set 2 Image 1" />
                     <p className="image-caption">Descriptor Locations (Set 2, Image 1)</p>
+                  </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img1_set4.png" alt="Top 5 descriptors for Set 2 Image 1" />
+                    <p className="image-caption">Top 5 Descriptors (Set 2, Image 1)</p>
                   </div>
                 </div>
                 <div className="image-row">
@@ -648,6 +664,10 @@ const CS180Proj03 = () => {
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img2_set4_locations.png" alt="Descriptor locations for Set 2 Image 2" />
                     <p className="image-caption">Descriptor Locations (Set 2, Image 2)</p>
                   </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img2_set4.png" alt="Top 5 descriptors for Set 2 Image 2" />
+                    <p className="image-caption">Top 5 Descriptors (Set 2, Image 2)</p>
+                  </div>
                 </div>
                 <div className="image-row">
                   <div className="image-item">
@@ -657,6 +677,10 @@ const CS180Proj03 = () => {
                   <div className="image-item">
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img3_set4_locations.png" alt="Descriptor locations for Set 2 Image 3" />
                     <p className="image-caption">Descriptor Locations (Set 2, Image 3)</p>
+                  </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img3_set4.png" alt="Top 5 descriptors for Set 2 Image 3" />
+                    <p className="image-caption">Top 5 Descriptors (Set 2, Image 3)</p>
                   </div>
                 </div>
                 <div className="image-row">
@@ -668,6 +692,10 @@ const CS180Proj03 = () => {
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img1_set5_locations.png" alt="Descriptor locations for Set 3 Image 1" />
                     <p className="image-caption">Descriptor Locations (Set 3, Image 1)</p>
                   </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img1_set5.png" alt="Top 5 descriptors for Set 3 Image 1" />
+                    <p className="image-caption">Top 5 Descriptors (Set 3, Image 1)</p>
+                  </div>
                 </div>
                 <div className="image-row">
                   <div className="image-item">
@@ -678,6 +706,10 @@ const CS180Proj03 = () => {
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img2_set5_locations.png" alt="Descriptor locations for Set 3 Image 2" />
                     <p className="image-caption">Descriptor Locations (Set 3, Image 2)</p>
                   </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img2_set5.png" alt="Top 5 descriptors for Set 3 Image 2" />
+                    <p className="image-caption">Top 5 Descriptors (Set 3, Image 2)</p>
+                  </div>
                 </div>
                 <div className="image-row">
                   <div className="image-item">
@@ -687,6 +719,10 @@ const CS180Proj03 = () => {
                   <div className="image-item">
                     <img src="/img/cs180/proj03/res_B2/descriptors_grid_img3_set5_locations.png" alt="Descriptor locations for Set 3 Image 3" />
                     <p className="image-caption">Descriptor Locations (Set 3, Image 3)</p>
+                  </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj03/res_B2/descriptors_top5_grid_img3_set5.png" alt="Top 5 descriptors for Set 3 Image 3" />
+                    <p className="image-caption">Top 5 Descriptors (Set 3, Image 3)</p>
                   </div>
                 </div>
               </div>
