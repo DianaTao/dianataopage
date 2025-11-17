@@ -334,6 +334,54 @@
 .cs180-project-page .badge-green { background: rgba(40, 167, 69, 0.9); }
 .cs180-project-page .badge-red { background: rgba(220, 53, 69, 0.9); }
 
+.cs180-project-page .results-box {
+  background: rgba(251, 69, 112, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.cs180-project-page .results-box h5 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cs180-project-page .results-box ul,
+.cs180-project-page .results-box ol {
+  margin-top: 10px;
+  padding-left: 1.5rem;
+}
+
+.cs180-project-page .results-box li {
+  margin-bottom: 8px;
+}
+
+.cs180-project-page .subsection {
+  margin: 25px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.cs180-project-page .subsection-title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cs180-project-page code {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--primary-color);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .cs180-projects .projects-grid {

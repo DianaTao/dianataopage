@@ -29,6 +29,11 @@ const CS180Projects = () => {
       id: 3,
       title: '[Auto]Stitching Photo Mosaics',
       description: 'Automatic panoramic image stitching using homography recovery, image warping, and multiresolution blending.'
+    },
+    {
+      id: 4,
+      title: 'Neural Radiance Fields (NeRF)',
+      description: 'Camera calibration, 3D scanning, and neural radiance field training for novel view synthesis from multi-view images.'
     }
     // More projects can be added here as they're completed
   ];
