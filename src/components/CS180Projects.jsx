@@ -34,6 +34,11 @@ const CS180Projects = () => {
       id: 4,
       title: 'Neural Radiance Fields (NeRF)',
       description: 'Camera calibration, 3D scanning, and neural radiance field training for novel view synthesis from multi-view images.'
+    },
+    {
+      id: 5,
+      title: 'Diffusion Models',
+      description: 'DeepFloyd IF diffusion model implementation: forward/backward diffusion, classifier-free guidance, image-to-image translation, inpainting, visual anagrams, and hybrid images.'
     }
     // More projects can be added here as they're completed
   ];
