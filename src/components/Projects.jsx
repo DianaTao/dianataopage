@@ -100,6 +100,17 @@ const Projects = () => {
       }
     },
     {
+      id: 4,
+      title: 'Art Advisor AI',
+      description: 'An innovative mobile application that enhances the art gallery and museum experience through artificial intelligence. The app allows visitors to capture images of artwork using their mobile device\'s camera and instantly receive AI-generated descriptions and insights about the pieces they\'re viewing. The project combines a React Native mobile frontend with a Python-based backend that leverages the VIT-GPT2 model for image captioning. It\'s designed to work offline, processing images locally without requiring external API calls, making it ideal for use in museums and galleries where internet connectivity might be limited.',
+      image: '/img/art-advisor.png',
+      category: 'personal',
+      technologies: ['Full Stack', 'React', 'MobileApp', 'JavaScript', 'Python', 'Machine Learning', 'PyTorch', 'Transformers', 'Computer Vision', 'Image Processing'],
+      links: {
+        github: 'https://github.com/DianaTao/art-advisor-ai'
+      }
+    },
+    {
       id: 5,
       title: 'MindBridge: Multi-Modal Emotion Intelligence Platform',
       description: 'A comprehensive emotion intelligence platform that leverages AWS serverless architecture to provide real-time emotion analysis across multiple modalities. The platform serves three key areas: Corporate Wellness Monitoring, Call Center Agent Support, and Digital Mental Health Coaching. Features include real-time video emotion detection using Amazon Rekognition, text sentiment analysis with Amazon Comprehend, live call analysis with Amazon Transcribe, and mental health check-ins powered by Amazon Bedrock. The system uses a sophisticated serverless architecture with Lambda functions for scalable, event-driven processing of emotional data.',

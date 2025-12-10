@@ -1608,6 +1608,23 @@ up1 = c2 * up1 + t2`}</code></pre>
               <p><strong>CFG Formula:</strong></p>
               <BlockMath math={"u = u_{\text{uncond}} + \\gamma (u_{\text{cond}} - u_{\text{uncond}})"} />
 
+              <p><strong>Training Loss Comparison:</strong></p>
+              <p>
+                Below are the training loss curves for the class-conditioned UNet trained with and without a learning rate scheduler:
+              </p>
+              <div className="image-gallery">
+                <div className="image-row">
+                  <div className="image-item">
+                    <img src="/img/cs180/proj05/part_b/part2.6_flow_matching_loss_with_scheduler.png" alt="Training loss with scheduler" />
+                    <p className="image-caption">Training Loss with Scheduler</p>
+                  </div>
+                  <div className="image-item">
+                    <img src="/img/cs180/proj05/part_b/part2.6_flow_matching_loss_scheduler.png.png" alt="Training loss without scheduler" />
+                    <p className="image-caption">Training Loss without Scheduler</p>
+                  </div>
+                </div>
+              </div>
+
               <div className="image-gallery">
                 <div className="image-row">
                   <div className="image-item">
