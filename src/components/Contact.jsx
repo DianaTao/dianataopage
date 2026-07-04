@@ -41,7 +41,7 @@ const Contact = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <a href="yifei66@berkeley.edu">
+            <a href="mailto:yifei66@berkeley.edu">
               <FontAwesomeIcon icon={faEnvelope} />
               <span>Email</span>
             </a>

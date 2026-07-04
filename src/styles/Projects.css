@@ -19,12 +19,16 @@
 
 .filter-btn {
   padding: 10px 20px;
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   background: transparent;
   color: var(--text-color);
-  border-radius: 30px;
+  border-radius: 999px;
   cursor: pointer;
+  font-family: var(--font-mono);
   font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
@@ -47,7 +51,8 @@
 
 .project-item {
   background: var(--card-bg);
-  border-radius: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -91,13 +96,16 @@
 .project-content h3 {
   color: var(--primary-color);
   margin-bottom: 10px;
+  font-family: var(--font-display);
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
 .project-content p {
-  color: var(--text-color);
+  color: var(--muted-text);
   margin-bottom: 15px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .project-technologies {
@@ -110,7 +118,9 @@
 .tech-tag {
   padding: 5px 10px;
   border-radius: 15px;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
+  font-weight: 300;
   display: inline-block;
   transition: transform 0.2s ease;
 }
@@ -130,15 +140,21 @@
   padding: 8px 20px;
   background-color: var(--primary-color);
   color: var(--bg-color);
-  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 999px;
   text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   transition: all 0.3s ease;
   flex: 0 1 auto;
   white-space: nowrap;
 }
 
 .project-links .btn:hover {
-  background-color: var(--text-color);
+  background-color: transparent;
   color: var(--primary-color);
 }
 

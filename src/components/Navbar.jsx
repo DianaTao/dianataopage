@@ -49,8 +49,26 @@ const Navbar = () => {
     }
   };
 
+  const handleLogoClick = () => {
+    setIsOpen(false);
+
+    if (location.pathname !== '/') {
+      navigate('/');
+    } else {
+      scrollToSection('home');
+    }
+  };
+
   return (
     <div className="menu-wrap">
+      <button
+        className="site-logo"
+        onClick={handleLogoClick}
+        aria-label="Go to home"
+      >
+        DT
+      </button>
+
       <button 
         className={`menu-button ${isOpen ? 'active' : ''}`}
         onClick={() => setIsOpen(!isOpen)}

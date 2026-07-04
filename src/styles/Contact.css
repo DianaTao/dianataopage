@@ -11,22 +11,28 @@
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  margin-top: 44px;
+  flex-wrap: wrap;
 }
 
 .contact-item {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease;
+  position: relative;
 }
 
-.contact-item:hover {
-  transform: translateY(-10px);
+.contact-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  width: 1px;
+  height: 22px;
+  background-color: var(--border-color);
+  transform: translateY(-50%);
 }
 
 .contact-icon {
@@ -42,14 +48,51 @@
 }
 
 .contact-item a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--text-color);
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  font-family: var(--font-mono);
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 1px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-item svg {
+  font-size: 1.1rem;
+  color: color-mix(in srgb, var(--text-color) 82%, transparent);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-item a:hover {
   color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.contact-item a:hover::after {
+  transform: scaleX(1);
+}
+
+.contact-item a:hover svg {
+  color: var(--primary-color);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
@@ -58,11 +101,17 @@
   }
 
   .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    flex-direction: column;
+    gap: 26px;
   }
 
-  .contact-item {
-    padding: 20px;
+  .contact-item:not(:last-child)::after {
+    right: auto;
+    top: auto;
+    bottom: -14px;
+    left: 50%;
+    width: 28px;
+    height: 1px;
+    transform: translateX(-50%);
   }
 } 
