@@ -4,7 +4,7 @@ import '../styles/Hero.css';
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  const roles = ['Web Designer', 'Software Engineer', 'Data Scientist'];
+  const roles = ['Software Engineer', 'AI Engineer', 'AI Infrastructure Engineer'];
 
   useEffect(() => {
     const interval = setInterval(() => {
